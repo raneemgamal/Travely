@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travely Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-container .logo-link {
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .login-container .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ff9500;
+        }
+
+        .login-container h2 {
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .login-form input[type="email"],
+        .login-form input[type="password"],
+        .login-form input[type="text"] {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .login-form input:focus {
+            outline: none;
+            border-color: #ff9500;
+        }
+
+        .login-form .login-submit-btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            background-color: #ff9500;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .login-form .login-submit-btn:hover {
+            background-color: #ff7700;
+        }
+
+        .forgot-password {
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .forgot-password a {
+            color: #ff9500;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .forgot-password a:hover {
+            color: #ff7700;
+            text-decoration: underline;
+        }
+
+        .back-home {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .back-home a {
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-home a:hover {
+            color: #ff9500;
+        }
+    </style>
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <a href="index.html" class="logo-link">
+            <span class="logo-text">travely</span>
+        </a>
+        <h2>Member Login</h2>
+        <form class="login-form" action="/index.html" method="GET">
+            <div class="form-group">
+                <label for="username">Email or Username</label>
+                <input type="email" id="username" name="username" placeholder="Enter your email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+            </div>
+
+            <button type="submit" class="login-submit-btn">LogIn</button>
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a> |
+            <a href="#">Create Account</a>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">&#8592; Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

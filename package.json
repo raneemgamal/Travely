@@ -1,0 +1,26 @@
+{
+  "name": "global-explorers-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Global Explorers travel site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.22.1",
+    "mysql2": "^3.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rakwa06/-Travely-Website.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rakwa06/-Travely-Website/issues"
+  },
+  "homepage": "https://github.com/Rakwa06/-Travely-Website#readme"
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البطة المرتاحة للسفر والسياحة - Flights</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">البطة المرتاحة للسفر والسياحة</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html" class="active">Flights</a></li>
+                <li><a href="hotels.html">Hotels</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Discover the World with Ease</h1>
+            <p>Compare and book flights, hotels, and tours at the best prices.</p>
+            
+            <div class="booking-form-container">
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="trip-type">Trip Type</label>
+                            <select id="trip-type" name="trip-type">
+                                <option value="round-trip">Round Trip</option>
+                                <option value="one-way">One-Way</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="travel-class">Travel Class</label>
+                            <select id="travel-class" name="travel-class">
+                                <option value="economy">Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first">First Class</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="origin">From City</label>
+                            <input type="text" id="origin" placeholder="e.g., New York" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="destination">To City</label>
+                            <input type="text" id="destination" placeholder="e.g., Paris" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="departure">Departure Date</label>
+                            <input type="date" id="departure" required>
+                        </div>
+                        <div class="input-group return-date-group">
+                            <label for="return">Return Date</label>
+                            <input type="date" id="return">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row travelers-row">
+                        <div class="input-group traveler-group">
+                            <label for="adults">Adults</label>
+                            <div class="counter-input">
+                                <button type="button" class="counter-btn minus" data-target="adults">-</button>
+                                <input type="number" id="adults" name="adults" value="1" min="1" max="9" readonly>
+                                <button type="button" class="counter-btn plus" data-target="adults">+</button>
+                            </div>
+                        </div>
+                        <div class="input-group traveler-group">
+                            <label for="children">Children</label>
+                            <div class="counter-input">
+                                <button type="button" class="counter-btn minus" data-target="children">-</button>
+                                <input type="number" id="children" name="children" value="0" min="0" max="9" readonly>
+                                <button type="button" class="counter-btn plus" data-target="children">+</button>
+                            </div>
+                        </div>
+                        <div class="input-group traveler-group">
+                            <label for="infants">Infants</label>
+                            <div class="counter-input">
+                                <button type="button" class="counter-btn minus" data-target="infants">-</button>
+                                <input type="number" id="infants" name="infants" value="0" min="0" max="9" readonly>
+                                <button type="button" class="counter-btn plus" data-target="infants">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="search-btn">Search Flights</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section">
+        <div id="search-info" style="text-align: center; margin-bottom: 20px; color: #666;">
+            Showing sample flights. Use the search form above to find specific routes.
+        </div>
+
+        <div class="results-section">
+            <div id="flights-results">
+                <div class="no-results">
+                    <p>Use the search form above to find available flights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations-section">
+        <h2>Top Destinations</h2>
+        <div class="slider-container">
+            <button class="slider-arrow slider-prev" aria-label="Previous">&#10094;</button>
+            <div class="slider-wrapper">
+                <div class="slider-track">
+                    <div class="slider-card" data-city="Paris">
+                        <img src="paris.jpeg" alt="Paris, France">
+                        <div class="slider-card-content">
+                            <h3>Paris, France</h3>
+                            <p class="price">From $299</p>
+                        </div>
+                    </div>
+                    <div class="slider-card" data-city="Tokyo">
+                        <img src="tokyo.jpeg" alt="Tokyo, Japan">
+                        <div class="slider-card-content">
+                            <h3>Tokyo, Japan</h3>
+                            <p class="price">From $599</p>
+                        </div>
+                    </div>
+                    <div class="slider-card" data-city="Sydney">
+                        <img src="download.jpeg" alt="Sydney, Australia">
+                        <div class="slider-card-content">
+                            <h3>Sydney, Australia</h3>
+                            <p class="price">From $799</p>
+                        </div>
+                    </div>
+                    <div class="slider-card" data-city="Dubai">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="Dubai, UAE">
+                        <div class="slider-card-content">
+                            <h3>Dubai, UAE</h3>
+                            <p class="price">From $449</p>
+                        </div>
+                    </div>
+                    <div class="slider-card" data-city="London">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400" alt="London, UK">
+                        <div class="slider-card-content">
+                            <h3>London, UK</h3>
+                            <p class="price">From $349</p>
+                        </div>
+                    </div>
+                    <div class="slider-card" data-city="New York">
+                        <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=400" alt="New York, USA">
+                        <div class="slider-card-content">
+                            <h3>New York, USA</h3>
+                            <p class="price">From $199</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-arrow slider-next" aria-label="Next">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 البطة المرتاحة للسفر والسياحة. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

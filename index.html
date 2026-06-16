@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>travely- Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="logo">travely</div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="flights.html">Flights</a></li>
+        <li><a href="hotels.html">Hotels</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="login.html" class="login-btn">Login</a>
+  </header>
+
+  <section class="home-hero">
+    <div class="home-hero-overlay">
+      <p class="home-hero-kicker">BE THE PART OF THIS WONDERFUL JOURNEY</p>
+      <h1 class="home-hero-title">Incredible Travel!</h1>
+
+      <a class="home-cta" href="flights.html">EXPLORE NOW</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 travely. All rights reserved.</p>
+  </footer>
+
+  <script>
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('userId');
+    if (userId) {
+      localStorage.setItem('userId', userId);
+     
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  </script>
+
+</body>
+</html>

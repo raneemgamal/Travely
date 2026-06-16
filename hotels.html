@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البطة المرتاحة للسفر والسياحة - Hotels</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="hotels-page">
+
+    <header class="main-header">
+        <div class="logo">البطة المرتاحة للسفر والسياحة</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flights.html">Flights</a></li>
+                <li><a href="hotels.html" class="active">Hotels</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <section class="page-section">
+        <h1 class="page-title">Find Your Perfect Stay</h1>
+
+        <div class="search-box">
+            <form id="hotel-search-form">
+                <div class="input-group">
+                    <label for="hotel-city">Destination</label>
+                    <input type="text" id="hotel-city" placeholder="City or hotel name" required>
+                </div>
+                <div class="input-group">
+                    <label for="hotel-checkin">Check-in</label>
+                    <input type="date" id="hotel-checkin" required>
+                </div>
+                <div class="input-group">
+                    <label for="hotel-checkout">Check-out</label>
+                    <input type="date" id="hotel-checkout" required>
+                </div>
+                <div class="input-group">
+                    <label for="hotel-guests">Guests</label>
+                    <select id="hotel-guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5+ Guests</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="hotel-rooms">Rooms</label>
+                    <select id="hotel-rooms">
+                        <option value="1" selected>1 Room</option>
+                        <option value="2">2 Rooms</option>
+                        <option value="3">3 Rooms</option>
+                        <option value="4">4+ Rooms</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn">Search Hotels</button>
+            </form>
+        </div>
+
+        <div class="results-section">
+            <div id="hotels-results"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 البطة المرتاحة للسفر والسياحة. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
